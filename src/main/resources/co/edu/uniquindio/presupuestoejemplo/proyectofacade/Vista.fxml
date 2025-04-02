@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.media.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,18 +8,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.presupuestoejemplo.proyectofacade.ViewControllers.VistaControlador">
    <children>
       <Pane layoutX="33.0" layoutY="7.0" prefHeight="387.0" prefWidth="535.0">
          <children>
-            <Button id="BuscarArchivobnt" fx:id="BuscarArchivobnt" layoutX="339.0" layoutY="66.0" mnemonicParsing="false" onAction="#onActionBuscar" text="Buscar" />
-            <Label layoutX="14.0" layoutY="59.0" prefHeight="44.0" prefWidth="199.0" text="BuscarArchivo" />
+            <Button id="BuscarArchivobnt" fx:id="BtnCargarArchivo" layoutX="339.0" layoutY="66.0" mnemonicParsing="false" onAction="#onActioncargarArchivo" text="cargar Video ">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font></Button>
+            <Label fx:id="lblArchivo" layoutX="69.0" layoutY="59.0" prefHeight="44.0" prefWidth="199.0" text="Archivo" />
             <Label layoutX="243.0" layoutY="60.0" />
-            <Separator layoutX="37.0" layoutY="110.0" prefHeight="0.0" prefWidth="440.0" />
+            <Separator layoutX="36.0" layoutY="173.0" prefHeight="0.0" prefWidth="440.0" />
             <TextField id="BuscarArchivoTxt" fx:id="BuscarArchivoTxt" layoutX="137.0" layoutY="66.0" />
-            <TextArea fx:id="txtAreamostrar" layoutX="91.0" layoutY="127.0" prefHeight="195.0" prefWidth="331.0" />
-            <Label fx:id="titulo" layoutX="144.0" prefHeight="44.0" prefWidth="199.0" text="Reproductor de video " />
+            <TextArea fx:id="txtAreamostrarRepro" layoutX="29.0" layoutY="224.0" prefHeight="110.0" prefWidth="483.0" />
+            <Label fx:id="lbltitulo" layoutX="144.0" prefHeight="44.0" prefWidth="199.0" text="Reproductor de video ">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font></Label>
+            <Button id="BuscarArchivobnt" fx:id="BtnReproducir" layoutX="173.0" layoutY="122.0" mnemonicParsing="false" onAction="#onActionReproducir" text="Reproducir Video " textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Arial Italic" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblReproduciendo" layoutX="45.0" layoutY="176.0" prefHeight="44.0" prefWidth="199.0" text="Reproduciendo: " />
          </children>
       </Pane>
    </children>

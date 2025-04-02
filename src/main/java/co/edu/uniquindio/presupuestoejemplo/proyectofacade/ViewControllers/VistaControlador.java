@@ -31,7 +31,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
     public class VistaControlador extends Application {
-
+        
         @FXML
         private ResourceBundle resources;
 
@@ -39,16 +39,30 @@ import javafx.scene.control.TextField;
         private URL location;
 
         @FXML
-        private Button BuscarArchivobnt;
+        private Button BtnReproducir;
 
         @FXML
-        private Label titulo;
+        private Label lblReproduciendo;
+
+        @FXML
+        private Label lblArchivo;
+
+        @FXML
+        private TextArea txtAreamostrarRepro;
 
         @FXML
         private TextField BuscarArchivoTxt;
 
         @FXML
-        private TextArea txtAreamostrar;
+        private Button BtnCargarArchivo;
+
+        @FXML
+        private Label lbltitulo;
+
+        @FXML
+        void onActioncargarArchivo(ActionEvent event) {
+
+        }
 
         @FXML
         void onActionReproducir(ActionEvent event) {
