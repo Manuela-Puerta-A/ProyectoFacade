@@ -6,6 +6,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.io.IOException;
 
 public class App extends Application {
@@ -19,7 +21,9 @@ public class App extends Application {
 	}
 
 	public static void main(String[] args) {
+
 		VideoFacade videoFacade = new VideoFacade();
+		List<VideoFacade> videoFacades= new ArrayList<>();
 		launch();
 
 	}

@@ -46,12 +46,22 @@ import javafx.scene.control.TextArea;
 
         @FXML
         void onActioncargarArchivo(ActionEvent event) {
+            System.out.println("Cargando Archivo");
+            if (BuscarArchivoTxt.getText().isEmpty()) {
+                System.out.println("Error: Todos los campos son obligatorios.");
+                return;
+            }
 
+            try {
+
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Ingresa un número válido en el campo de coste.");
+            }
         }
 
         @FXML
         void onActionReproducir(ActionEvent event) {
-
+            System.out.println("Reproducir");
         }
 
     public static void main(String[] args) {
