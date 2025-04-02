@@ -12,14 +12,12 @@ public class CheckFacade {
 	
 	public CheckFacade() {
 		videoApi = new VideoApi();
+		videoApi.buscarVideoApi(videoApi.getNombrevideo(), videoApi.getPeso());
 		//avionAPI = new AvionAPI();
 		//hotelAPI = new HotelAPI();
 	}
-	public CheckFacade(VideoApi videoApi) {
-		this.videoApi = videoApi;
-		videoApi.buscarVideoApi(videoApi.getNombrevideo(), videoApi.getPeso());
-	}
-	
+
+
 	//public void buscar(String fechaIda, String fechaVuelta, String origen, String destino) {
 		//avionAPI.buscarVuelos(fechaIda, fechaVuelta, origen, destino);
 		//hotelAPI.buscarHoteles(fechaIda, fechaVuelta, origen, destino);
