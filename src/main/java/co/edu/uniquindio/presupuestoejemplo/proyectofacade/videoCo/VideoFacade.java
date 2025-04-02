@@ -1,6 +1,5 @@
-package co.edu.uniquindio.presupuestoejemplo.proyectofacade;
+package co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo;
 
-import co.edu.uniquindio.presupuestoejemplo.proyectofacade.api.VideoApi;
 import co.edu.uniquindio.presupuestoejemplo.proyectofacade.api.VideoApi;
 
 public class VideoFacade {

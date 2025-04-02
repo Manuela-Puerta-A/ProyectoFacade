@@ -1,5 +1,6 @@
 package co.edu.uniquindio.presupuestoejemplo.proyectofacade;
 
+import co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo.VideoFacade;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -11,7 +12,7 @@ public class App extends Application {
 	@Override
 	public void start(Stage stage) throws IOException {
 		FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("vista.fxml"));
-		Scene scene = new Scene(fxmlLoader.load(), 420, 440);
+		Scene scene = new Scene(fxmlLoader.load());
 		stage.setTitle("Reproductor");
 		stage.setScene(scene);
 		stage.show();
