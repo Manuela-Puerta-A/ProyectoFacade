@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.presupuestoejemplo.proyectofacade.ViewControllers.VistaControlador">
+   <children>
+      <Pane layoutX="33.0" layoutY="7.0" prefHeight="387.0" prefWidth="535.0">
+         <children>
+            <Button id="BuscarArchivobnt" fx:id="BuscarArchivobnt" layoutX="339.0" layoutY="66.0" mnemonicParsing="false" onAction="#onActionBuscar" text="Buscar" />
+            <Label layoutX="14.0" layoutY="59.0" prefHeight="44.0" prefWidth="199.0" text="BuscarArchivo" />
+            <Label layoutX="243.0" layoutY="60.0" />
+            <Separator layoutX="37.0" layoutY="110.0" prefHeight="0.0" prefWidth="440.0" />
+            <TextField id="BuscarArchivoTxt" fx:id="BuscarArchivoTxt" layoutX="137.0" layoutY="66.0" />
+            <TextArea fx:id="txtAreamostrar" layoutX="91.0" layoutY="127.0" prefHeight="195.0" prefWidth="331.0" />
+            <Label fx:id="titulo" layoutX="144.0" prefHeight="44.0" prefWidth="199.0" text="Reproductor de video " />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
