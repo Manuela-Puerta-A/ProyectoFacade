@@ -26,8 +26,6 @@ import javafx.scene.control.TextArea;
         @FXML
         private Button BtnReproducir;
 
-        @FXML
-        private Label lblReproduciendo;
 
         @FXML
         private Label lblArchivo;
@@ -39,10 +37,17 @@ import javafx.scene.control.TextArea;
         private TextField BuscarArchivoTxt;
 
         @FXML
+        private Label lblreproduciendo;
+
+        @FXML
         private Button BtnCargarArchivo;
 
         @FXML
         private Label lbltitulo;
+        @FXML
+        public void initialize() {
+            lblreproduciendo.setVisible(false);
+        }
 
         @FXML
         void onActioncargarArchivo(ActionEvent event) {
@@ -53,6 +58,8 @@ import javafx.scene.control.TextArea;
         @FXML
         void onActionReproducir(ActionEvent event) {
             reproduciendoVideo();
+            BuscarArchivoTxt.clear();
+            lblreproduciendo.setVisible(true);
             System.out.println("Reproducir");
 
         }
@@ -70,7 +77,8 @@ import javafx.scene.control.TextArea;
         }
 
     public static void main(String[] args) {
-        launch(args);
+
+            launch(args);
     }
 
     @Override
