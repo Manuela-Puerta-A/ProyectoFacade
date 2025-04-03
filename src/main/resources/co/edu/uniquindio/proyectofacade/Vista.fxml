@@ -31,7 +31,7 @@
                   <Font name="Arial Italic" size="15.0" />
                </font>
             </Button>
-
+            <Label fx:id="lblMensajeError" text="" textFill="red"/>
             <Label layoutX="227.0" layoutY="125.0" />
             <Label fx:id="lblreproduciendo" layoutX="224.0" layoutY="114.0" prefHeight="44.0" prefWidth="199.0" text="Reproduciendo " visible="false" />
             <TableView fx:id="ListVideos" layoutY="187.0" prefHeight="200.0" prefWidth="535.0">
