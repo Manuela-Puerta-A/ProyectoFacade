@@ -22,9 +22,11 @@ public class VideoAppWithoutFacade {
             System.out.println("Códec " + type + " cargado.");
         }
 
+
+
         @Override
-        public String decodificar(VideoFile file, Codec codec) {
-            return "";
+        public void codec(VideoFile file, Codec codec) {
+
         }
     }
     class VideoDecoder implements IVideoDecoder {

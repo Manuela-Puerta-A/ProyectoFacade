@@ -15,8 +15,18 @@ public class VideoFacade implements ICodec, IVideoDecoder, IVideoPlayer {
     }
 
     @Override
-    public String decodificar(VideoFile file, VideoAppWithoutFacade.Codec codec) {
-        return "";
+    public void codec(VideoFile file, VideoAppWithoutFacade.Codec codec) {
+
+    }
+
+    @Override
+    public void decode(VideoFile file, VideoAppWithoutFacade.Codec codec) {
+
+    }
+
+    @Override
+    public void play(VideoFile file) {
+
     }
 }
 
