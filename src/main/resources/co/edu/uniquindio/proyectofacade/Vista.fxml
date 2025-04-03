@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.presupuestoejemplo.proyectofacade.ViewControllers.VistaControlador">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofacade.ViewControllers.VistaControlador">
    <children>
       <Pane layoutX="33.0" layoutY="7.0" prefHeight="387.0" prefWidth="535.0">
          <children>
@@ -20,13 +20,13 @@
                </font></Button>
             <Label fx:id="lblArchivo" layoutX="69.0" layoutY="59.0" prefHeight="44.0" prefWidth="199.0" text="Archivo" />
             <Label layoutX="243.0" layoutY="60.0" />
-            <Separator layoutX="36.0" layoutY="173.0" prefHeight="0.0" prefWidth="440.0" />
-            <TextField id="BuscarArchivoTxt" fx:id="BuscarArchivoTxt" layoutX="137.0" layoutY="66.0" />
+            <Separator layoutX="-29.0" layoutY="160.0" prefHeight="17.0" prefWidth="594.0" />
+            <TextField fx:id="BuscarArchivoTxt" layoutX="137.0" layoutY="66.0" />
             <Label fx:id="lbltitulo" layoutX="144.0" prefHeight="44.0" prefWidth="199.0" text="Reproductor de video ">
                <font>
                   <Font name="Arial" size="15.0" />
                </font></Label>
-            <Button id="BuscarArchivobnt" fx:id="BtnReproducir" layoutX="67.0" layoutY="122.0" mnemonicParsing="false" onAction="#onActionReproducir" text="Reproducir Video " textOverrun="CENTER_ELLIPSIS">
+            <Button fx:id="BtnReproducir" layoutX="67.0" layoutY="122.0" mnemonicParsing="false" onAction="#onActionReproducir" text="Reproducir Video " textOverrun="CENTER_ELLIPSIS">
                <font>
                   <Font name="Arial Italic" size="15.0" />
                </font>
@@ -36,7 +36,7 @@
             <Label fx:id="lblreproduciendo" layoutX="224.0" layoutY="114.0" prefHeight="44.0" prefWidth="199.0" text="Reproduciendo " visible="false" />
             <TableView fx:id="ListVideos" layoutY="187.0" prefHeight="200.0" prefWidth="535.0">
               <columns>
-                <TableColumn fx:id="colmNombre" prefWidth="533.6666564941406" text="C1" />
+                <TableColumn fx:id="colmNombre" prefWidth="533.6666564941406" text="Nombre Video" />
               </columns>
             </TableView>
          </children>

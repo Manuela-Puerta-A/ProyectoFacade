@@ -1,8 +1,8 @@
-package co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo;
+package co.edu.uniquindio.proyectofacade.videoCo;
 
-import co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo.Interface.ICodec;
-import co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo.Interface.IVideoDecoder;
-import co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo.Interface.IVideoPlayer;
+import co.edu.uniquindio.proyectofacade.videoCo.interfaces.ICodec;
+import co.edu.uniquindio.proyectofacade.videoCo.interfaces.IVideoDecoder;
+import co.edu.uniquindio.proyectofacade.videoCo.interfaces.IVideoPlayer;
 
 // Cliente que usa todo directamente
 public class VideoAppWithoutFacade {

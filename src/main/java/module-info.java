@@ -1,14 +1,16 @@
-module co.edu.uniquindio.presupuestoejemplo.proyectofacade {
+module co.edu.uniquindio.proyectofacade {
     requires javafx.controls;
     requires javafx.fxml;
-
     requires org.controlsfx.controls;
 
-    opens co.edu.uniquindio.presupuestoejemplo.proyectofacade to javafx.fxml;
-    exports co.edu.uniquindio.presupuestoejemplo.proyectofacade;
-    opens co.edu.uniquindio.presupuestoejemplo.proyectofacade.ViewControllers to javafx.fxml;
-    exports co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo;
-    opens co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo to javafx.fxml;
-    exports co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo.Interface;
-    opens co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo.Interface to javafx.fxml;
+    opens co.edu.uniquindio.proyectofacade to javafx.fxml;
+    exports co.edu.uniquindio.proyectofacade;
+
+    opens co.edu.uniquindio.proyectofacade.ViewControllers to javafx.fxml;
+    exports co.edu.uniquindio.proyectofacade.ViewControllers;
+
+    exports co.edu.uniquindio.proyectofacade.videoCo;
+    opens co.edu.uniquindio.proyectofacade.videoCo to javafx.fxml;
+
+    exports co.edu.uniquindio.proyectofacade.videoCo.interfaces;
 }

@@ -1,13 +1,10 @@
-package co.edu.uniquindio.presupuestoejemplo.proyectofacade;
+package co.edu.uniquindio.proyectofacade;
 
-import co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo.VideoFacade;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.io.IOException;
 
 public class App extends Application {
