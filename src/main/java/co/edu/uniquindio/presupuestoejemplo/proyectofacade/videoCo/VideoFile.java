@@ -1,6 +1,6 @@
 package co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo;
 
-class VideoFile {
+public class VideoFile {
     private String filename;
 
     public VideoFile(String filename) {

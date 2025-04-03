@@ -1,8 +1,11 @@
 package co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo;
 
 import co.edu.uniquindio.presupuestoejemplo.proyectofacade.api.VideoApi;
+import co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo.Interface.ICodec;
+import co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo.Interface.IVideoDecoder;
+import co.edu.uniquindio.presupuestoejemplo.proyectofacade.videoCo.Interface.IVideoPlayer;
 
-public class VideoFacade {
+public class VideoFacade implements ICodec, IVideoDecoder, IVideoPlayer {
     private VideoApi videoApi;
 
     public VideoFacade() {
@@ -11,5 +14,9 @@ public class VideoFacade {
 
     }
 
+    @Override
+    public String decodificar(VideoFile file, VideoAppWithoutFacade.Codec codec) {
+        return "";
+    }
 }
 
